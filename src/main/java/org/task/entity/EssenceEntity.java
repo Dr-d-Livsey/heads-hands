@@ -100,7 +100,7 @@ public class EssenceEntity {
                 target.health
         );
 
-        if (target.health < 0){
+        if (target.health <= 0){
             target.health = 0;
             System.out.printf("%s %s is dead!%n",
                     target.type == EssenceEntityType.PLAYER ? "Player" : "Monster",
